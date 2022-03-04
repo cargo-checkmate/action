@@ -1,0 +1,5 @@
+name: 'cargo-checkmate'
+description: 'Run cargo-checkmate on a rust crate'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
