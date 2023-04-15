@@ -1,6 +1,4 @@
 #!/bin/bash
 set -x
-whoami
-echo $HOME
-cat ~/.gitconfig
+git config --global --add safe.directory /github/workspace
 exec cargo checkmate "$1"
