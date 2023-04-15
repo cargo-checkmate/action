@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /github/workspace
-exec ls -la
+set -x
+exec cargo checkmate "$1"

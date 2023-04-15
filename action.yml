@@ -1,5 +1,12 @@
 name: 'cargo-checkmate'
 description: 'Run cargo-checkmate on a rust crate'
+inputs:
+  phase:
+    description: 'The cargo-checkmate phase to run'
+    required: false
+    default: 'all'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.phase }}
