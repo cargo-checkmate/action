@@ -7,6 +7,6 @@ inputs:
     default: 'all'
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/cargo-checkmate/action:latest'
+  image: 'docker://ghcr.io/cargo-checkmate/cargo-checkmate:latest'
   args:
     - ${{ inputs.phase }}
